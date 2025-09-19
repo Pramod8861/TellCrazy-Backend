@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 const port = 5500;
 
-const mongoURI = 'mongodb+srv://pramod18:pramod85@biswal@cluster0.cny7fgt.mongodb.net/';
+const mongoURI = 'mongo';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
